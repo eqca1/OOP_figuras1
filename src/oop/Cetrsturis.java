@@ -16,7 +16,7 @@ public class Cetrsturis {
 			
 		}
 	public String izvaditCetrsturaInfo() {
-		return "Platums - "+platums+" cm./nAugstums - "+augstums+" cm.";
+		return "Platums - "+platums+" cm.\nAugstums - "+augstums+" cm.";
 	}
 	public double cLaukums() {
 		double L;
