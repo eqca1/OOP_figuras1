@@ -2,10 +2,10 @@ package oop;
 
 public class Trijsturis {
 
-	public double malaA, malaB, malaC;
+	public int malaA, malaB, malaC;
 	public Centrs punkts;
 	
-	public Trijsturis(Centrs p, double m1, double m2, double m3) {
+	public Trijsturis(Centrs p, int m1, int m2, int m3) {
 		punkts = p;
 		malaA = m1;
 		malaB = m2;
