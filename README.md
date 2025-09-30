@@ -11,5 +11,5 @@ Objektorientēta programma, kas ļauj veidot figūru objektus un izveides proces
 - [ ] Izveidot klasi Figuras
 - [x] Izveidot klasi OIzveide
 - [x] Nodrošināt jauna objekta izveidi un uzglabāšanu
-- [ ] Nodrošināt esošo objektu aplūkošanu
+- [x] Nodrošināt esošo objektu aplūkošanu
 - [ ] Nodrošināt metodu izsaukšanu
