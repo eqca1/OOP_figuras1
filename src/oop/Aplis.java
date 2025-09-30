@@ -10,7 +10,7 @@ public class Aplis {
 	}
 	
 	public String izvaditAplaInfo() {
-		return "Rādiuss - "+radiuss+" cm.";
+		return "Rādiuss - "+radiuss+" cm, Riņķa līnija - "+rLinija()+" cm.";
 	}
 	
 	public double rLinija() {

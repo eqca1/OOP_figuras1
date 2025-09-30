@@ -9,7 +9,10 @@ public class OIzveide {
 		if( Figuras.centraObjekti.size() < 1)
 		return -1;
 		
-		return Integer.parseInt(JOptionPane.showInputDialog(null, IzveidotieObjekti.izvadit(Figuras.centraObjekti)));
+		String izvele = JOptionPane.showInputDialog(null, IzveidotieObjekti.izvadit(Figuras.centraObjekti));
+		if (izvele == null) return -1;
+		
+		return Integer.parseInt(izvele);
 	}
 	
 	static void izveidotObjektu() {
@@ -29,12 +32,20 @@ public class OIzveide {
 			x = Integer.parseInt(xiev);
 			
 			}while(x < -100 || x > 100);
+			
+			
+			
 			String yiev;
 			do {
 			yiev = JOptionPane.showInputDialog(null, "~Ievadi centra punkta y koordinātas ( -100 -- 100 )~");
 			y = Integer.parseInt(yiev);
 			
 			}while(y < -100 || y > 100);
+			
+			if((x == -1 || y == -1) && (xiev == null || yiev == null)) {
+				JOptionPane.showMessageDialog(null, "Centra punkts netika izveidots!", "Kļūda!", JOptionPane.ERROR_MESSAGE);
+				break;
+			}
 			
 			Figuras.centraObjekti.add(new Centrs(x, y));
 			
@@ -58,6 +69,7 @@ public class OIzveide {
 					if (cPNr == -1) {
 						JOptionPane.showMessageDialog(null, "Nav centra punkts ko izvēlēties!", "Kļūda", JOptionPane.ERROR_MESSAGE); break; }
 					String piev;
+				
 					do {
 					piev = JOptionPane.showInputDialog(null, "~Ievadi platumu ( 1 - 100 )~");
 					p = Integer.parseInt(piev);
@@ -69,6 +81,9 @@ public class OIzveide {
 					a = Integer.parseInt(piev);
 					}while(a < 1 || a > 100);
 					JOptionPane.showMessageDialog(null, "Četrstūris izveidots!", "Paziņojums", JOptionPane.INFORMATION_MESSAGE);
+					
+					if (p == -1 || a == -1) JOptionPane.showMessageDialog(null, "Četrstūris netika izveidots",
+							"Kļūda!", JOptionPane.ERROR_MESSAGE);
 					Figuras.cetrsturaObjekti.add(new Cetrsturis(Figuras.centraObjekti.get(cPNr),p, a ));
 					
 					break;

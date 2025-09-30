@@ -13,7 +13,7 @@ public class Trijsturis {
 	}
 	
 	public String izvaditTrijsturaInfo() {
-		return "Mala A - "+malaA+" cm.\nMala B - "+malaB+" cm.\nMala C - "+malaC+" cm.";
+		return "Mala A - "+malaA+" cm, Mala B - "+malaB+" cm, Mala C - "+malaC+" cm.\nLaukums - "+tLaukums()+" cm2.";
 	}
 	public double tLaukums() {
 		
